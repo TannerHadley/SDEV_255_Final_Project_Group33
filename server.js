@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname)));
 
 
 app.get('/', (req, res) => {
-  res.redirect('/courses_routing')
+  res.redirect('/views')
 });
 
 app.listen(PORT, () => {
