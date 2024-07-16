@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3030;
 app.use(express.static(path.join(__dirname)));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index_FinalProjectGroup3.html'));
+  res.sendFile(path.join(__dirname, 'courses_routing/views/course_index.ejs'));
 });
 
 app.listen(PORT, () => {
