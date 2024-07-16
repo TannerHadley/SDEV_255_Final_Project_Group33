@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3030;
 
 app.use(express.static(path.join(__dirname)));
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   res.redirect('/views')
 });
 
