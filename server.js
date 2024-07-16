@@ -5,8 +5,9 @@ const PORT = process.env.PORT || 3030;
 
 app.use(express.static(path.join(__dirname)));
 
-app.get('*', (req, res) => {
-  res.redirect('/courses_routing/views/course_index.ejs')
+
+app.get('/', (req, res) => {
+  res.redirect('/courses_routing')
 });
 
 app.listen(PORT, () => {
